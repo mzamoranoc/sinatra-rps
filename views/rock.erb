@@ -1,0 +1,15 @@
+<h1>Rock</h1>
+<p>Computer played: <%= @computer_move %></p>
+<p>
+  <% if @computer_move == 'rock' %>
+    We tied!
+  <% elsif @computer_move == 'paper' %>
+    We lost!
+  <% else %>
+    We won!
+  <% end %>
+</p>
+<a href="/">Rules</a><br>
+<a href="/rock">Play Rock</a><br>
+<a href="/paper">Play Paper</a><br>
+<a href="/scissors">Play Scissors</a>
